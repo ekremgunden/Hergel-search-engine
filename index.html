@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+        <div id="settings1" class="set" onclick="sett()">
+            <a href="#" class="main"  >
+                <i class="fas fa-cog" ></i> 
+            </a>
+        </div>
+        
+        <div id="settings2" class="set" onclick="sett1()">
+            <a href="#" class="main" >
+                <i class="fas fa-times"></i> 
+            </a>
+        </div>
+        
+        <div class="sett-pop-up" id="popup">
+            <ul>
+                <li>
+                    <a href="#">
+                        New Walpaper
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        New Walpaper1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        New Walpaper2
+                    </a>
+                </li>
+            </ul>
+        </div>
+    <header>
+        <div class="weather">
+            <div class="wea">
+                <h4>Konya</h4>
+            <div class="tempature">
+                <i class="fas fa-cloud"></i>
+                <p>10'C</p>
+            </div>
+            <div class="wea-detail">
+                <p>Bulutlu</p>
+            </div>
+            <a href="#" id="weath" onclick="weat()"><i class="fas fa-ellipsis-h" id="wea-change"></i></a>    
+        </div>
+        <div class="wea-set" id="wea-set">
+            <a href=""><i class="fas fa-times" onclick="weaSetOff()"></i></a>
+            <h4>Weather Settings</h4>
+            City
+            <input type="text">
+            
+            <button type="button" onclick="weaSetOff()">tamamla</button>
+        </div>
+        </div>
+    </header>
+
+    <div class="search">
+        <h2>HERgel</h2>
+        <div class="search-box">
+            <form>
+                <i class="fas fa-important"></i>
+                <input type="text" placeholder="Aranacak kelimeyi veya cümleyi gir..">
+                <button type="submit"><i class="fa fa-search"></i></button>
+        </form>    
+        </div>
+    </div>
+<!--
+    <footer>
+        <div class="open-off-color-mode">
+            <h4>Koyu Mod</h4>
+            <input type="checkbox" id="check" hidden>
+            <label for="check" class="toggle">
+                <div class="circle"></div>
+            </label>
+        </div>
+    </footer>
+-->
+    <footer>
+        <p>Ekrem Günden tarafından yapılmıştır.</p>
+       <a href="https://github.com/ekremgunden/" target="_blank" > <i class="fab fa-github"></i>Takip Et</a>
+    </footer>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
